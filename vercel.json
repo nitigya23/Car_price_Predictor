@@ -1,5 +1,12 @@
 {
   "version": 2,
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.py" },
+    { "source": "/catalog", "destination": "/catalog.html" },
+    { "source": "/analytics", "destination": "/analytics.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/", "destination": "/index.html" }
+  ]
 }
