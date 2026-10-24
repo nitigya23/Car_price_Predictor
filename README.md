@@ -1,4 +1,4 @@
-# Ford Car Valuation AI - Prestige Modern Edition 🚗✨
+# Ford Car Valuation AI - Prestige Modern Edition 
 
 An ultra-chic, high-fashion modern automotive intelligence platform built for Ford car price prediction. Powered by an ensemble Random Forest regressor with **94.01% $R^2$ accuracy** trained on 17,800+ real UK listings.
 
