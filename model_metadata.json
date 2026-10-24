@@ -1,0 +1,2741 @@
+{
+  "models": [
+    "B-MAX",
+    "C-MAX",
+    "EcoSport",
+    "Edge",
+    "Escort",
+    "Fiesta",
+    "Focus",
+    "Fusion",
+    "Galaxy",
+    "Grand C-MAX",
+    "Grand Tourneo Connect",
+    "KA",
+    "Ka+",
+    "Kuga",
+    "Mondeo",
+    "Mustang",
+    "Puma",
+    "Ranger",
+    "S-MAX",
+    "Streetka",
+    "Tourneo Connect",
+    "Tourneo Custom",
+    "Transit Tourneo"
+  ],
+  "years": [
+    2020,
+    2019,
+    2018,
+    2017,
+    2016,
+    2015,
+    2014,
+    2013,
+    2012,
+    2011,
+    2010,
+    2009,
+    2008,
+    2007,
+    2006,
+    2005,
+    2004,
+    2003,
+    2002,
+    2000,
+    1998,
+    1996
+  ],
+  "transmissions": [
+    "Automatic",
+    "Manual",
+    "Semi-Auto"
+  ],
+  "fuelTypes": [
+    "Diesel",
+    "Electric",
+    "Hybrid",
+    "Other",
+    "Petrol"
+  ],
+  "metrics": {
+    "random_forest": {
+      "r2": 0.9401,
+      "mae": 837.84
+    },
+    "linear_regression": {
+      "r2": 0.8577,
+      "mae": 1351.27
+    }
+  },
+  "model_defaults": {
+    "B-MAX": {
+      "overall": {
+        "mileage": 25000,
+        "tax": 145,
+        "mpg": 55.4,
+        "engineSize": 1.4,
+        "transmission": "Manual",
+        "fuelType": "Petrol",
+        "avgPrice": 8272,
+        "count": 350
+      },
+      "by_year": {
+        "2018": {
+          "mileage": 9782,
+          "tax": 145,
+          "mpg": 55.4,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 10559,
+          "minPrice": 7991,
+          "maxPrice": 12299
+        },
+        "2017": {
+          "mileage": 16803,
+          "tax": 145,
+          "mpg": 55.4,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 9807,
+          "minPrice": 6200,
+          "maxPrice": 12499
+        },
+        "2016": {
+          "mileage": 20590,
+          "tax": 30,
+          "mpg": 55.4,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 8532,
+          "minPrice": 5991,
+          "maxPrice": 10980
+        },
+        "2015": {
+          "mileage": 35466,
+          "tax": 30,
+          "mpg": 55.4,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 7527,
+          "minPrice": 5991,
+          "maxPrice": 9495
+        },
+        "2014": {
+          "mileage": 39444,
+          "tax": 30,
+          "mpg": 55.4,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 6784,
+          "minPrice": 5295,
+          "maxPrice": 7998
+        },
+        "2013": {
+          "mileage": 44201,
+          "tax": 30,
+          "mpg": 55.4,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 6119,
+          "minPrice": 4960,
+          "maxPrice": 7999
+        },
+        "2012": {
+          "mileage": 39384,
+          "tax": 30,
+          "mpg": 55.4,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 6679,
+          "minPrice": 4499,
+          "maxPrice": 9995
+        }
+      },
+      "available_years": [
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012
+      ]
+    },
+    "C-MAX": {
+      "overall": {
+        "mileage": 23666,
+        "tax": 30,
+        "mpg": 61.4,
+        "engineSize": 1.5,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 9914,
+        "count": 542
+      },
+      "by_year": {
+        "2019": {
+          "mileage": 5785,
+          "tax": 145,
+          "mpg": 48.7,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 14778,
+          "minPrice": 12400,
+          "maxPrice": 17995
+        },
+        "2018": {
+          "mileage": 8243,
+          "tax": 145,
+          "mpg": 55.4,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 12722,
+          "minPrice": 9999,
+          "maxPrice": 14700
+        },
+        "2017": {
+          "mileage": 19856,
+          "tax": 30,
+          "mpg": 68.9,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 10794,
+          "minPrice": 7491,
+          "maxPrice": 14990
+        },
+        "2016": {
+          "mileage": 25000,
+          "tax": 20,
+          "mpg": 64.2,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 9947,
+          "minPrice": 7299,
+          "maxPrice": 13490
+        },
+        "2015": {
+          "mileage": 34945,
+          "tax": 30,
+          "mpg": 61.4,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 8616,
+          "minPrice": 5489,
+          "maxPrice": 11970
+        },
+        "2014": {
+          "mileage": 39197,
+          "tax": 30,
+          "mpg": 55.4,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 7529,
+          "minPrice": 4895,
+          "maxPrice": 9500
+        },
+        "2013": {
+          "mileage": 51338,
+          "tax": 30,
+          "mpg": 55.4,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 6374,
+          "minPrice": 3990,
+          "maxPrice": 8782
+        },
+        "2012": {
+          "mileage": 49700,
+          "tax": 180,
+          "mpg": 42.8,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 6404,
+          "minPrice": 5270,
+          "maxPrice": 7750
+        },
+        "2011": {
+          "mileage": 78014,
+          "tax": 30,
+          "mpg": 61.4,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 4779,
+          "minPrice": 4195,
+          "maxPrice": 5990
+        },
+        "2010": {
+          "mileage": 80964,
+          "tax": 180,
+          "mpg": 47.5,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 3580,
+          "minPrice": 2500,
+          "maxPrice": 4977
+        },
+        "2009": {
+          "mileage": 87500,
+          "tax": 235,
+          "mpg": 39.8,
+          "engineSize": 1.8,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 3031,
+          "minPrice": 1995,
+          "maxPrice": 4490
+        },
+        "2008": {
+          "mileage": 90000,
+          "tax": 235,
+          "mpg": 39.8,
+          "engineSize": 1.8,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2673,
+          "minPrice": 1999,
+          "maxPrice": 3495
+        },
+        "2007": {
+          "mileage": 82000,
+          "tax": 235,
+          "mpg": 39.8,
+          "engineSize": 1.8,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2395,
+          "minPrice": 1995,
+          "maxPrice": 2695
+        },
+        "2006": {
+          "mileage": 91000,
+          "tax": 235,
+          "mpg": 40.4,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1775,
+          "minPrice": 1775,
+          "maxPrice": 1775
+        }
+      },
+      "available_years": [
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2011,
+        2010,
+        2009,
+        2008,
+        2007,
+        2006
+      ]
+    },
+    "EcoSport": {
+      "overall": {
+        "mileage": 14000,
+        "tax": 145,
+        "mpg": 53.3,
+        "engineSize": 1.0,
+        "transmission": "Manual",
+        "fuelType": "Petrol",
+        "avgPrice": 12469,
+        "count": 1127
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 529,
+          "tax": 145,
+          "mpg": 52.8,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 18044,
+          "minPrice": 16299,
+          "maxPrice": 22450
+        },
+        "2019": {
+          "mileage": 4000,
+          "tax": 145,
+          "mpg": 51.4,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 16381,
+          "minPrice": 13149,
+          "maxPrice": 20000
+        },
+        "2018": {
+          "mileage": 11902,
+          "tax": 145,
+          "mpg": 54.3,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 13922,
+          "minPrice": 9640,
+          "maxPrice": 17995
+        },
+        "2017": {
+          "mileage": 21698,
+          "tax": 145,
+          "mpg": 52.3,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 10007,
+          "minPrice": 7500,
+          "maxPrice": 14725
+        },
+        "2016": {
+          "mileage": 23689,
+          "tax": 125,
+          "mpg": 53.3,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 9424,
+          "minPrice": 7498,
+          "maxPrice": 11595
+        },
+        "2015": {
+          "mileage": 31433,
+          "tax": 125,
+          "mpg": 52.3,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 8121,
+          "minPrice": 7030,
+          "maxPrice": 9495
+        },
+        "2014": {
+          "mileage": 32884,
+          "tax": 125,
+          "mpg": 53.3,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 7690,
+          "minPrice": 6420,
+          "maxPrice": 9000
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014
+      ]
+    },
+    "Edge": {
+      "overall": {
+        "mileage": 20746,
+        "tax": 150,
+        "mpg": 47.9,
+        "engineSize": 2.0,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 22710,
+        "count": 205
+      },
+      "by_year": {
+        "2019": {
+          "mileage": 3846,
+          "tax": 145,
+          "mpg": 37.2,
+          "engineSize": 2.0,
+          "transmission": "Semi-Auto",
+          "fuelType": "Diesel",
+          "avgPrice": 31818,
+          "minPrice": 23995,
+          "maxPrice": 36000
+        },
+        "2018": {
+          "mileage": 13719,
+          "tax": 145,
+          "mpg": 47.9,
+          "engineSize": 2.0,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 24330,
+          "minPrice": 19498,
+          "maxPrice": 32000
+        },
+        "2017": {
+          "mileage": 23598,
+          "tax": 160,
+          "mpg": 48.7,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 20263,
+          "minPrice": 15700,
+          "maxPrice": 24000
+        },
+        "2016": {
+          "mileage": 28746,
+          "tax": 160,
+          "mpg": 48.7,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 18782,
+          "minPrice": 14998,
+          "maxPrice": 21995
+        }
+      },
+      "available_years": [
+        2019,
+        2018,
+        2017,
+        2016
+      ]
+    },
+    "Escort": {
+      "overall": {
+        "mileage": 50000,
+        "tax": 265,
+        "mpg": 34.4,
+        "engineSize": 1.8,
+        "transmission": "Manual",
+        "fuelType": "Petrol",
+        "avgPrice": 3000,
+        "count": 1
+      },
+      "by_year": {
+        "1996": {
+          "mileage": 50000,
+          "tax": 265,
+          "mpg": 34.4,
+          "engineSize": 1.8,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 3000,
+          "minPrice": 3000,
+          "maxPrice": 3000
+        }
+      },
+      "available_years": [
+        1996
+      ]
+    },
+    "Fiesta": {
+      "overall": {
+        "mileage": 17852,
+        "tax": 145,
+        "mpg": 62.8,
+        "engineSize": 1.0,
+        "transmission": "Manual",
+        "fuelType": "Petrol",
+        "avgPrice": 10191,
+        "count": 6508
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 216,
+          "tax": 145,
+          "mpg": 56.5,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 16708,
+          "minPrice": 12995,
+          "maxPrice": 25999
+        },
+        "2019": {
+          "mileage": 7002,
+          "tax": 145,
+          "mpg": 58.9,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 14383,
+          "minPrice": 8856,
+          "maxPrice": 22495
+        },
+        "2018": {
+          "mileage": 14282,
+          "tax": 145,
+          "mpg": 64.2,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 11271,
+          "minPrice": 7899,
+          "maxPrice": 17990
+        },
+        "2017": {
+          "mileage": 18561,
+          "tax": 145,
+          "mpg": 65.7,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 9716,
+          "minPrice": 5990,
+          "maxPrice": 14932
+        },
+        "2016": {
+          "mileage": 23271,
+          "tax": 0,
+          "mpg": 65.7,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 8768,
+          "minPrice": 5400,
+          "maxPrice": 15717
+        },
+        "2015": {
+          "mileage": 29694,
+          "tax": 0,
+          "mpg": 65.7,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 7741,
+          "minPrice": 4690,
+          "maxPrice": 13995
+        },
+        "2014": {
+          "mileage": 35009,
+          "tax": 0,
+          "mpg": 62.8,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 7135,
+          "minPrice": 4200,
+          "maxPrice": 11400
+        },
+        "2013": {
+          "mileage": 39966,
+          "tax": 0,
+          "mpg": 61.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 6441,
+          "minPrice": 3995,
+          "maxPrice": 9495
+        },
+        "2012": {
+          "mileage": 58400,
+          "tax": 125,
+          "mpg": 50.4,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 5105,
+          "minPrice": 2995,
+          "maxPrice": 7891
+        },
+        "2011": {
+          "mileage": 66000,
+          "tax": 125,
+          "mpg": 50.4,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 4675,
+          "minPrice": 2695,
+          "maxPrice": 5999
+        },
+        "2010": {
+          "mileage": 71500,
+          "tax": 145,
+          "mpg": 49.6,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 4110,
+          "minPrice": 2690,
+          "maxPrice": 6295
+        },
+        "2009": {
+          "mileage": 65700,
+          "tax": 145,
+          "mpg": 49.6,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 3747,
+          "minPrice": 2250,
+          "maxPrice": 5450
+        },
+        "2008": {
+          "mileage": 77570,
+          "tax": 145,
+          "mpg": 47.1,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2559,
+          "minPrice": 694,
+          "maxPrice": 4490
+        },
+        "2007": {
+          "mileage": 71000,
+          "tax": 160,
+          "mpg": 45.6,
+          "engineSize": 1.3,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2033,
+          "minPrice": 1295,
+          "maxPrice": 2895
+        },
+        "2006": {
+          "mileage": 68235,
+          "tax": 160,
+          "mpg": 47.1,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2091,
+          "minPrice": 1299,
+          "maxPrice": 2395
+        },
+        "2005": {
+          "mileage": 119000,
+          "tax": 165,
+          "mpg": 45.6,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1295,
+          "minPrice": 1295,
+          "maxPrice": 1295
+        },
+        "2004": {
+          "mileage": 88936,
+          "tax": 160,
+          "mpg": 45.6,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1415,
+          "minPrice": 950,
+          "maxPrice": 2295
+        },
+        "2000": {
+          "mileage": 43000,
+          "tax": 160,
+          "mpg": 41.5,
+          "engineSize": 1.3,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1995,
+          "minPrice": 1995,
+          "maxPrice": 1995
+        },
+        "1998": {
+          "mileage": 37000,
+          "tax": 160,
+          "mpg": 41.5,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2699,
+          "minPrice": 2699,
+          "maxPrice": 2699
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2011,
+        2010,
+        2009,
+        2008,
+        2007,
+        2006,
+        2005,
+        2004,
+        2000,
+        1998
+      ]
+    },
+    "Focus": {
+      "overall": {
+        "mileage": 17366,
+        "tax": 145,
+        "mpg": 60.1,
+        "engineSize": 1.5,
+        "transmission": "Manual",
+        "fuelType": "Petrol",
+        "avgPrice": 13178,
+        "count": 4556
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 1461,
+          "tax": 145,
+          "mpg": 59.5,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 21570,
+          "minPrice": 15600,
+          "maxPrice": 30999
+        },
+        "2019": {
+          "mileage": 6856,
+          "tax": 145,
+          "mpg": 60.1,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 17504,
+          "minPrice": 6900,
+          "maxPrice": 30359
+        },
+        "2018": {
+          "mileage": 14000,
+          "tax": 145,
+          "mpg": 58.9,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 14628,
+          "minPrice": 9950,
+          "maxPrice": 54995
+        },
+        "2017": {
+          "mileage": 21504,
+          "tax": 145,
+          "mpg": 60.1,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 12554,
+          "minPrice": 6995,
+          "maxPrice": 38015
+        },
+        "2016": {
+          "mileage": 30600,
+          "tax": 20,
+          "mpg": 67.3,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 10802,
+          "minPrice": 6299,
+          "maxPrice": 25000
+        },
+        "2015": {
+          "mileage": 42898,
+          "tax": 20,
+          "mpg": 67.3,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 8946,
+          "minPrice": 5492,
+          "maxPrice": 14740
+        },
+        "2014": {
+          "mileage": 45153,
+          "tax": 30,
+          "mpg": 56.5,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 7583,
+          "minPrice": 4990,
+          "maxPrice": 14800
+        },
+        "2013": {
+          "mileage": 53132,
+          "tax": 20,
+          "mpg": 58.9,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 6487,
+          "minPrice": 2995,
+          "maxPrice": 12495
+        },
+        "2012": {
+          "mileage": 66663,
+          "tax": 78,
+          "mpg": 56.5,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 5816,
+          "minPrice": 3899,
+          "maxPrice": 9799
+        },
+        "2011": {
+          "mileage": 69000,
+          "tax": 145,
+          "mpg": 47.9,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 5175,
+          "minPrice": 3295,
+          "maxPrice": 9199
+        },
+        "2010": {
+          "mileage": 88760,
+          "tax": 200,
+          "mpg": 45.3,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 3772,
+          "minPrice": 2495,
+          "maxPrice": 7490
+        },
+        "2009": {
+          "mileage": 87509,
+          "tax": 200,
+          "mpg": 42.2,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 3670,
+          "minPrice": 1695,
+          "maxPrice": 21500
+        },
+        "2008": {
+          "mileage": 89000,
+          "tax": 200,
+          "mpg": 42.2,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2648,
+          "minPrice": 1290,
+          "maxPrice": 3695
+        },
+        "2007": {
+          "mileage": 65000,
+          "tax": 220,
+          "mpg": 40.1,
+          "engineSize": 1.7,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 3431,
+          "minPrice": 1450,
+          "maxPrice": 6995
+        },
+        "2006": {
+          "mileage": 89000,
+          "tax": 125,
+          "mpg": 58.9,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 2062,
+          "minPrice": 1495,
+          "maxPrice": 2495
+        },
+        "2005": {
+          "mileage": 88327,
+          "tax": 220,
+          "mpg": 41.0,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1633,
+          "minPrice": 675,
+          "maxPrice": 2495
+        },
+        "2003": {
+          "mileage": 89630,
+          "tax": 200,
+          "mpg": 40.9,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2063,
+          "minPrice": 495,
+          "maxPrice": 3999
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2011,
+        2010,
+        2009,
+        2008,
+        2007,
+        2006,
+        2005,
+        2003
+      ]
+    },
+    "Fusion": {
+      "overall": {
+        "mileage": 65000,
+        "tax": 200,
+        "mpg": 42.8,
+        "engineSize": 1.4,
+        "transmission": "Manual",
+        "fuelType": "Petrol",
+        "avgPrice": 2556,
+        "count": 16
+      },
+      "by_year": {
+        "2011": {
+          "mileage": 35006,
+          "tax": 200,
+          "mpg": 42.8,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 3999,
+          "minPrice": 3999,
+          "maxPrice": 3999
+        },
+        "2010": {
+          "mileage": 80000,
+          "tax": 115,
+          "mpg": 53.1,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 2859,
+          "minPrice": 1795,
+          "maxPrice": 4750
+        },
+        "2009": {
+          "mileage": 86022,
+          "tax": 205,
+          "mpg": 43.5,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2277,
+          "minPrice": 1450,
+          "maxPrice": 2890
+        },
+        "2008": {
+          "mileage": 66000,
+          "tax": 260,
+          "mpg": 37.2,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2615,
+          "minPrice": 1895,
+          "maxPrice": 3199
+        },
+        "2007": {
+          "mileage": 62233,
+          "tax": 200,
+          "mpg": 42.8,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2299,
+          "minPrice": 2299,
+          "maxPrice": 2299
+        },
+        "2006": {
+          "mileage": 69255,
+          "tax": 200,
+          "mpg": 43.5,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2495,
+          "minPrice": 2495,
+          "maxPrice": 2495
+        },
+        "2005": {
+          "mileage": 47500,
+          "tax": 115,
+          "mpg": 52.9,
+          "engineSize": 1.4,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 2245,
+          "minPrice": 2095,
+          "maxPrice": 2395
+        },
+        "2004": {
+          "mileage": 59300,
+          "tax": 200,
+          "mpg": 42.8,
+          "engineSize": 1.4,
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "avgPrice": 1500,
+          "minPrice": 1500,
+          "maxPrice": 1500
+        }
+      },
+      "available_years": [
+        2011,
+        2010,
+        2009,
+        2008,
+        2007,
+        2006,
+        2005,
+        2004
+      ]
+    },
+    "Galaxy": {
+      "overall": {
+        "mileage": 28613,
+        "tax": 145,
+        "mpg": 55.4,
+        "engineSize": 2.0,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 17849,
+        "count": 227
+      },
+      "by_year": {
+        "2019": {
+          "mileage": 7439,
+          "tax": 145,
+          "mpg": 54.3,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 25549,
+          "minPrice": 20800,
+          "maxPrice": 29499
+        },
+        "2018": {
+          "mileage": 31654,
+          "tax": 145,
+          "mpg": 56.0,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 18921,
+          "minPrice": 13985,
+          "maxPrice": 24499
+        },
+        "2017": {
+          "mileage": 32582,
+          "tax": 125,
+          "mpg": 56.5,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 18604,
+          "minPrice": 14995,
+          "maxPrice": 21500
+        },
+        "2016": {
+          "mileage": 27716,
+          "tax": 125,
+          "mpg": 56.5,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 17617,
+          "minPrice": 10792,
+          "maxPrice": 23000
+        },
+        "2015": {
+          "mileage": 42384,
+          "tax": 160,
+          "mpg": 47.1,
+          "engineSize": 2.0,
+          "transmission": "Semi-Auto",
+          "fuelType": "Diesel",
+          "avgPrice": 10995,
+          "minPrice": 10995,
+          "maxPrice": 10995
+        },
+        "2014": {
+          "mileage": 38670,
+          "tax": 155,
+          "mpg": 48.4,
+          "engineSize": 2.0,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 10274,
+          "minPrice": 8000,
+          "maxPrice": 11950
+        },
+        "2013": {
+          "mileage": 61500,
+          "tax": 200,
+          "mpg": 47.1,
+          "engineSize": 2.0,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 8730,
+          "minPrice": 6470,
+          "maxPrice": 11750
+        },
+        "2012": {
+          "mileage": 69708,
+          "tax": 200,
+          "mpg": 44.4,
+          "engineSize": 1.8,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 7810,
+          "minPrice": 6490,
+          "maxPrice": 8773
+        },
+        "2010": {
+          "mileage": 113000,
+          "tax": 200,
+          "mpg": 49.6,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 5827,
+          "minPrice": 4490,
+          "maxPrice": 6995
+        },
+        "2009": {
+          "mileage": 66500,
+          "tax": 200,
+          "mpg": 45.2,
+          "engineSize": 1.9,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 5375,
+          "minPrice": 5275,
+          "maxPrice": 5475
+        },
+        "2008": {
+          "mileage": 124994,
+          "tax": 205,
+          "mpg": 44.8,
+          "engineSize": 1.8,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 4272,
+          "minPrice": 3995,
+          "maxPrice": 4550
+        },
+        "2007": {
+          "mileage": 133694,
+          "tax": 235,
+          "mpg": 44.8,
+          "engineSize": 1.8,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 3362,
+          "minPrice": 2495,
+          "maxPrice": 4195
+        },
+        "2005": {
+          "mileage": 114000,
+          "tax": 305,
+          "mpg": 28.0,
+          "engineSize": 2.3,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1995,
+          "minPrice": 1995,
+          "maxPrice": 1995
+        }
+      },
+      "available_years": [
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2010,
+        2009,
+        2008,
+        2007,
+        2005
+      ]
+    },
+    "Grand C-MAX": {
+      "overall": {
+        "mileage": 25929,
+        "tax": 30,
+        "mpg": 58.9,
+        "engineSize": 1.5,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 10882,
+        "count": 247
+      },
+      "by_year": {
+        "2019": {
+          "mileage": 7570,
+          "tax": 145,
+          "mpg": 51.4,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 14976,
+          "minPrice": 12899,
+          "maxPrice": 16995
+        },
+        "2018": {
+          "mileage": 11708,
+          "tax": 145,
+          "mpg": 51.4,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 13823,
+          "minPrice": 11176,
+          "maxPrice": 17900
+        },
+        "2017": {
+          "mileage": 21738,
+          "tax": 30,
+          "mpg": 64.2,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 11459,
+          "minPrice": 7994,
+          "maxPrice": 14500
+        },
+        "2016": {
+          "mileage": 26798,
+          "tax": 30,
+          "mpg": 61.4,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 10415,
+          "minPrice": 8480,
+          "maxPrice": 13990
+        },
+        "2015": {
+          "mileage": 36529,
+          "tax": 78,
+          "mpg": 60.1,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 9308,
+          "minPrice": 7999,
+          "maxPrice": 10499
+        },
+        "2014": {
+          "mileage": 43391,
+          "tax": 125,
+          "mpg": 60.1,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 7966,
+          "minPrice": 6998,
+          "maxPrice": 9195
+        },
+        "2013": {
+          "mileage": 42472,
+          "tax": 125,
+          "mpg": 60.1,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 7222,
+          "minPrice": 6597,
+          "maxPrice": 8470
+        },
+        "2012": {
+          "mileage": 65296,
+          "tax": 200,
+          "mpg": 40.9,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 6320,
+          "minPrice": 5990,
+          "maxPrice": 6650
+        },
+        "2011": {
+          "mileage": 73780,
+          "tax": 200,
+          "mpg": 40.9,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 5695,
+          "minPrice": 3399,
+          "maxPrice": 7995
+        }
+      },
+      "available_years": [
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2011
+      ]
+    },
+    "Grand Tourneo Connect": {
+      "overall": {
+        "mileage": 18209,
+        "tax": 125,
+        "mpg": 61.4,
+        "engineSize": 1.5,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 14765,
+        "count": 57
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 601,
+          "tax": 145,
+          "mpg": 61.4,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 20850,
+          "minPrice": 20850,
+          "maxPrice": 20850
+        },
+        "2019": {
+          "mileage": 4284,
+          "tax": 145,
+          "mpg": 61.4,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 18261,
+          "minPrice": 14998,
+          "maxPrice": 22000
+        },
+        "2018": {
+          "mileage": 10703,
+          "tax": 145,
+          "mpg": 56.6,
+          "engineSize": 1.5,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 15357,
+          "minPrice": 12298,
+          "maxPrice": 17298
+        },
+        "2017": {
+          "mileage": 20122,
+          "tax": 125,
+          "mpg": 64.2,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 14225,
+          "minPrice": 11000,
+          "maxPrice": 24500
+        },
+        "2016": {
+          "mileage": 29208,
+          "tax": 125,
+          "mpg": 59.0,
+          "engineSize": 1.5,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 13132,
+          "minPrice": 11410,
+          "maxPrice": 14500
+        },
+        "2015": {
+          "mileage": 74214,
+          "tax": 125,
+          "mpg": 58.9,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 9946,
+          "minPrice": 6499,
+          "maxPrice": 13200
+        },
+        "2014": {
+          "mileage": 37381,
+          "tax": 125,
+          "mpg": 58.9,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 10995,
+          "minPrice": 10995,
+          "maxPrice": 10995
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014
+      ]
+    },
+    "KA": {
+      "overall": {
+        "mileage": 32711,
+        "tax": 30,
+        "mpg": 57.7,
+        "engineSize": 1.2,
+        "transmission": "Manual",
+        "fuelType": "Petrol",
+        "avgPrice": 5207,
+        "count": 197
+      },
+      "by_year": {
+        "2019": {
+          "mileage": 5500,
+          "tax": 145,
+          "mpg": 47.9,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 10369,
+          "minPrice": 9000,
+          "maxPrice": 11495
+        },
+        "2018": {
+          "mileage": 7973,
+          "tax": 150,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 9004,
+          "minPrice": 8135,
+          "maxPrice": 10000
+        },
+        "2017": {
+          "mileage": 18400,
+          "tax": 145,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 7827,
+          "minPrice": 6699,
+          "maxPrice": 8600
+        },
+        "2016": {
+          "mileage": 21466,
+          "tax": 30,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 6062,
+          "minPrice": 4500,
+          "maxPrice": 8100
+        },
+        "2015": {
+          "mileage": 28883,
+          "tax": 30,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 5109,
+          "minPrice": 3990,
+          "maxPrice": 6200
+        },
+        "2014": {
+          "mileage": 35000,
+          "tax": 30,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 4619,
+          "minPrice": 3295,
+          "maxPrice": 5997
+        },
+        "2013": {
+          "mileage": 40000,
+          "tax": 30,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 4274,
+          "minPrice": 2975,
+          "maxPrice": 5300
+        },
+        "2012": {
+          "mileage": 57500,
+          "tax": 30,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 3973,
+          "minPrice": 3295,
+          "maxPrice": 5495
+        },
+        "2011": {
+          "mileage": 64304,
+          "tax": 30,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 3203,
+          "minPrice": 2650,
+          "maxPrice": 3888
+        },
+        "2010": {
+          "mileage": 61575,
+          "tax": 30,
+          "mpg": 55.4,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 3295,
+          "minPrice": 2799,
+          "maxPrice": 3995
+        },
+        "2009": {
+          "mileage": 64720,
+          "tax": 30,
+          "mpg": 55.4,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 3190,
+          "minPrice": 1954,
+          "maxPrice": 4990
+        },
+        "2008": {
+          "mileage": 69500,
+          "tax": 178,
+          "mpg": 43.5,
+          "engineSize": 1.3,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1363,
+          "minPrice": 795,
+          "maxPrice": 1895
+        },
+        "2007": {
+          "mileage": 69000,
+          "tax": 180,
+          "mpg": 44.5,
+          "engineSize": 1.3,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1642,
+          "minPrice": 1295,
+          "maxPrice": 1990
+        },
+        "2006": {
+          "mileage": 94400,
+          "tax": 200,
+          "mpg": 43.5,
+          "engineSize": 1.3,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1095,
+          "minPrice": 1095,
+          "maxPrice": 1095
+        }
+      },
+      "available_years": [
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2011,
+        2010,
+        2009,
+        2008,
+        2007,
+        2006
+      ]
+    },
+    "Ka+": {
+      "overall": {
+        "mileage": 9778,
+        "tax": 145,
+        "mpg": 57.7,
+        "engineSize": 1.2,
+        "transmission": "Manual",
+        "fuelType": "Petrol",
+        "avgPrice": 8699,
+        "count": 523
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 2000,
+          "tax": 145,
+          "mpg": 43.5,
+          "engineSize": 0.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 11999,
+          "minPrice": 11999,
+          "maxPrice": 11999
+        },
+        "2019": {
+          "mileage": 2500,
+          "tax": 145,
+          "mpg": 47.9,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 10734,
+          "minPrice": 8491,
+          "maxPrice": 13350
+        },
+        "2018": {
+          "mileage": 10022,
+          "tax": 145,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 8516,
+          "minPrice": 6690,
+          "maxPrice": 12495
+        },
+        "2017": {
+          "mileage": 14928,
+          "tax": 145,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 7535,
+          "minPrice": 5750,
+          "maxPrice": 9000
+        },
+        "2016": {
+          "mileage": 17898,
+          "tax": 30,
+          "mpg": 57.7,
+          "engineSize": 1.2,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 7427,
+          "minPrice": 5790,
+          "maxPrice": 8495
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2018,
+        2017,
+        2016
+      ]
+    },
+    "Kuga": {
+      "overall": {
+        "mileage": 19164,
+        "tax": 145,
+        "mpg": 54.3,
+        "engineSize": 2.0,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 15819,
+        "count": 2208
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 589,
+          "tax": 140,
+          "mpg": 201.8,
+          "engineSize": 2.5,
+          "transmission": "Automatic",
+          "fuelType": "Hybrid",
+          "avgPrice": 29060,
+          "minPrice": 20450,
+          "maxPrice": 33500
+        },
+        "2019": {
+          "mileage": 8038,
+          "tax": 145,
+          "mpg": 38.7,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 19805,
+          "minPrice": 11698,
+          "maxPrice": 26500
+        },
+        "2018": {
+          "mileage": 15258,
+          "tax": 145,
+          "mpg": 54.3,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 17113,
+          "minPrice": 12428,
+          "maxPrice": 24995
+        },
+        "2017": {
+          "mileage": 22223,
+          "tax": 145,
+          "mpg": 60.1,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 15262,
+          "minPrice": 9700,
+          "maxPrice": 29495
+        },
+        "2016": {
+          "mileage": 29336,
+          "tax": 145,
+          "mpg": 54.3,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 13514,
+          "minPrice": 9681,
+          "maxPrice": 18500
+        },
+        "2015": {
+          "mileage": 41943,
+          "tax": 145,
+          "mpg": 54.3,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 11586,
+          "minPrice": 7991,
+          "maxPrice": 15995
+        },
+        "2014": {
+          "mileage": 46536,
+          "tax": 160,
+          "mpg": 47.9,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 10274,
+          "minPrice": 7699,
+          "maxPrice": 14400
+        },
+        "2013": {
+          "mileage": 56084,
+          "tax": 200,
+          "mpg": 47.9,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 9430,
+          "minPrice": 7499,
+          "maxPrice": 12495
+        },
+        "2012": {
+          "mileage": 56384,
+          "tax": 555,
+          "mpg": 27.4,
+          "engineSize": 2.5,
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "avgPrice": 8878,
+          "minPrice": 8150,
+          "maxPrice": 9490
+        },
+        "2011": {
+          "mileage": 70000,
+          "tax": 205,
+          "mpg": 47.1,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 7484,
+          "minPrice": 6950,
+          "maxPrice": 7995
+        },
+        "2010": {
+          "mileage": 35488,
+          "tax": 178,
+          "mpg": 54.0,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 11747,
+          "minPrice": 7495,
+          "maxPrice": 15999
+        },
+        "2009": {
+          "mileage": 91770,
+          "tax": 235,
+          "mpg": 44.1,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 5322,
+          "minPrice": 4352,
+          "maxPrice": 6295
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2011,
+        2010,
+        2009
+      ]
+    },
+    "Mondeo": {
+      "overall": {
+        "mileage": 37156,
+        "tax": 135,
+        "mpg": 62.8,
+        "engineSize": 2.0,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 12259,
+        "count": 512
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 16,
+          "tax": 145,
+          "mpg": 65.7,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 21673,
+          "minPrice": 20000,
+          "maxPrice": 26290
+        },
+        "2019": {
+          "mileage": 3080,
+          "tax": 145,
+          "mpg": 65.7,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 20292,
+          "minPrice": 12625,
+          "maxPrice": 32000
+        },
+        "2018": {
+          "mileage": 25199,
+          "tax": 145,
+          "mpg": 45.6,
+          "engineSize": 2.0,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 15175,
+          "minPrice": 12489,
+          "maxPrice": 20000
+        },
+        "2017": {
+          "mileage": 30765,
+          "tax": 145,
+          "mpg": 64.2,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 13353,
+          "minPrice": 7195,
+          "maxPrice": 18500
+        },
+        "2016": {
+          "mileage": 50432,
+          "tax": 30,
+          "mpg": 65.7,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 10969,
+          "minPrice": 6991,
+          "maxPrice": 18750
+        },
+        "2015": {
+          "mileage": 57547,
+          "tax": 20,
+          "mpg": 67.3,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 9604,
+          "minPrice": 5795,
+          "maxPrice": 14991
+        },
+        "2014": {
+          "mileage": 68333,
+          "tax": 30,
+          "mpg": 61.4,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 7942,
+          "minPrice": 5290,
+          "maxPrice": 13302
+        },
+        "2013": {
+          "mileage": 55578,
+          "tax": 125,
+          "mpg": 57.7,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 6920,
+          "minPrice": 5328,
+          "maxPrice": 9500
+        },
+        "2012": {
+          "mileage": 77000,
+          "tax": 145,
+          "mpg": 53.3,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 5658,
+          "minPrice": 3495,
+          "maxPrice": 7995
+        },
+        "2011": {
+          "mileage": 75905,
+          "tax": 200,
+          "mpg": 44.1,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 4894,
+          "minPrice": 3495,
+          "maxPrice": 8950
+        },
+        "2010": {
+          "mileage": 110500,
+          "tax": 182,
+          "mpg": 50.4,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 3394,
+          "minPrice": 2495,
+          "maxPrice": 4699
+        },
+        "2009": {
+          "mileage": 84000,
+          "tax": 300,
+          "mpg": 39.8,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 3588,
+          "minPrice": 2750,
+          "maxPrice": 4250
+        },
+        "2008": {
+          "mileage": 77750,
+          "tax": 250,
+          "mpg": 41.8,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 2620,
+          "minPrice": 1299,
+          "maxPrice": 3890
+        },
+        "2007": {
+          "mileage": 127000,
+          "tax": 205,
+          "mpg": 46.3,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 1497,
+          "minPrice": 1200,
+          "maxPrice": 1795
+        },
+        "2005": {
+          "mileage": 103000,
+          "tax": 205,
+          "mpg": 48.7,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 882,
+          "minPrice": 675,
+          "maxPrice": 1295
+        },
+        "2002": {
+          "mileage": 136784,
+          "tax": 300,
+          "mpg": 36.2,
+          "engineSize": 1.8,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 895,
+          "minPrice": 895,
+          "maxPrice": 895
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2011,
+        2010,
+        2009,
+        2008,
+        2007,
+        2005,
+        2002
+      ]
+    },
+    "Mustang": {
+      "overall": {
+        "mileage": 5064,
+        "tax": 145,
+        "mpg": 22.8,
+        "engineSize": 5.0,
+        "transmission": "Automatic",
+        "fuelType": "Petrol",
+        "avgPrice": 34631,
+        "count": 57
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 672,
+          "tax": 145,
+          "mpg": 23.7,
+          "engineSize": 5.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 39993,
+          "minPrice": 33979,
+          "maxPrice": 48000
+        },
+        "2019": {
+          "mileage": 800,
+          "tax": 145,
+          "mpg": 22.1,
+          "engineSize": 5.0,
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "avgPrice": 39250,
+          "minPrice": 35488,
+          "maxPrice": 45250
+        },
+        "2018": {
+          "mileage": 7759,
+          "tax": 145,
+          "mpg": 23.5,
+          "engineSize": 5.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 30519,
+          "minPrice": 25000,
+          "maxPrice": 37500
+        },
+        "2017": {
+          "mileage": 18865,
+          "tax": 150,
+          "mpg": 23.5,
+          "engineSize": 5.0,
+          "transmission": "Semi-Auto",
+          "fuelType": "Petrol",
+          "avgPrice": 33266,
+          "minPrice": 27500,
+          "maxPrice": 49999
+        },
+        "2016": {
+          "mileage": 18500,
+          "tax": 570,
+          "mpg": 23.5,
+          "engineSize": 5.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 26482,
+          "minPrice": 24497,
+          "maxPrice": 28490
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2018,
+        2017,
+        2016
+      ]
+    },
+    "Puma": {
+      "overall": {
+        "mileage": 1440,
+        "tax": 145,
+        "mpg": 50.4,
+        "engineSize": 1.0,
+        "transmission": "Manual",
+        "fuelType": "Petrol",
+        "avgPrice": 21428,
+        "count": 79
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 1440,
+          "tax": 145,
+          "mpg": 50.4,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 21860,
+          "minPrice": 18994,
+          "maxPrice": 30000
+        },
+        "2019": {
+          "mileage": 1312,
+          "tax": 145,
+          "mpg": 50.4,
+          "engineSize": 1.0,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 22007,
+          "minPrice": 18990,
+          "maxPrice": 25820
+        },
+        "2002": {
+          "mileage": 88500,
+          "tax": 225,
+          "mpg": 38.5,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 2445,
+          "minPrice": 2195,
+          "maxPrice": 2695
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2002
+      ]
+    },
+    "Ranger": {
+      "overall": {
+        "mileage": 88000,
+        "tax": 240,
+        "mpg": 28.3,
+        "engineSize": 3.2,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 14495,
+        "count": 1
+      },
+      "by_year": {
+        "2013": {
+          "mileage": 88000,
+          "tax": 240,
+          "mpg": 28.3,
+          "engineSize": 3.2,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 14495,
+          "minPrice": 14495,
+          "maxPrice": 14495
+        }
+      },
+      "available_years": [
+        2013
+      ]
+    },
+    "S-MAX": {
+      "overall": {
+        "mileage": 28252,
+        "tax": 145,
+        "mpg": 54.3,
+        "engineSize": 2.0,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 17655,
+        "count": 294
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 1000,
+          "tax": 145,
+          "mpg": 43.5,
+          "engineSize": 2.0,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 30698,
+          "minPrice": 22991,
+          "maxPrice": 34498
+        },
+        "2019": {
+          "mileage": 9252,
+          "tax": 145,
+          "mpg": 54.3,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 25286,
+          "minPrice": 20510,
+          "maxPrice": 35000
+        },
+        "2018": {
+          "mileage": 15410,
+          "tax": 145,
+          "mpg": 56.5,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 20975,
+          "minPrice": 15998,
+          "maxPrice": 26900
+        },
+        "2017": {
+          "mileage": 28828,
+          "tax": 145,
+          "mpg": 54.3,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 17665,
+          "minPrice": 11295,
+          "maxPrice": 24000
+        },
+        "2016": {
+          "mileage": 33246,
+          "tax": 125,
+          "mpg": 56.5,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 16207,
+          "minPrice": 12795,
+          "maxPrice": 21499
+        },
+        "2015": {
+          "mileage": 34490,
+          "tax": 145,
+          "mpg": 51.8,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 13975,
+          "minPrice": 8199,
+          "maxPrice": 18992
+        },
+        "2014": {
+          "mileage": 40000,
+          "tax": 200,
+          "mpg": 47.1,
+          "engineSize": 2.0,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 10877,
+          "minPrice": 9488,
+          "maxPrice": 12000
+        },
+        "2013": {
+          "mileage": 71430,
+          "tax": 200,
+          "mpg": 47.1,
+          "engineSize": 2.0,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 8985,
+          "minPrice": 7899,
+          "maxPrice": 11000
+        },
+        "2012": {
+          "mileage": 73974,
+          "tax": 200,
+          "mpg": 47.1,
+          "engineSize": 2.0,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 8496,
+          "minPrice": 5995,
+          "maxPrice": 10997
+        },
+        "2011": {
+          "mileage": 109772,
+          "tax": 200,
+          "mpg": 47.1,
+          "engineSize": 2.0,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 5991,
+          "minPrice": 4990,
+          "maxPrice": 6990
+        },
+        "2010": {
+          "mileage": 71363,
+          "tax": 200,
+          "mpg": 47.1,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 6490,
+          "minPrice": 6490,
+          "maxPrice": 6490
+        },
+        "2009": {
+          "mileage": 59496,
+          "tax": 260,
+          "mpg": 42.8,
+          "engineSize": 2.2,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 5685,
+          "minPrice": 5685,
+          "maxPrice": 5685
+        },
+        "2008": {
+          "mileage": 89450,
+          "tax": 378,
+          "mpg": 37.4,
+          "engineSize": 2.1,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 4792,
+          "minPrice": 4695,
+          "maxPrice": 4890
+        },
+        "2007": {
+          "mileage": 136500,
+          "tax": 220,
+          "mpg": 44.9,
+          "engineSize": 1.9,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 2698,
+          "minPrice": 2400,
+          "maxPrice": 2995
+        },
+        "2006": {
+          "mileage": 115500,
+          "tax": 205,
+          "mpg": 44.9,
+          "engineSize": 1.9,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 3435,
+          "minPrice": 2995,
+          "maxPrice": 3875
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2018,
+        2017,
+        2016,
+        2015,
+        2014,
+        2013,
+        2012,
+        2011,
+        2010,
+        2009,
+        2008,
+        2007,
+        2006
+      ]
+    },
+    "Streetka": {
+      "overall": {
+        "mileage": 68528,
+        "tax": 280,
+        "mpg": 35.5,
+        "engineSize": 1.6,
+        "transmission": "Manual",
+        "fuelType": "Petrol",
+        "avgPrice": 1924,
+        "count": 2
+      },
+      "by_year": {
+        "2006": {
+          "mileage": 74055,
+          "tax": 290,
+          "mpg": 35.8,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1850,
+          "minPrice": 1850,
+          "maxPrice": 1850
+        },
+        "2005": {
+          "mileage": 63000,
+          "tax": 270,
+          "mpg": 35.3,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "avgPrice": 1999,
+          "minPrice": 1999,
+          "maxPrice": 1999
+        }
+      },
+      "available_years": [
+        2006,
+        2005
+      ]
+    },
+    "Tourneo Connect": {
+      "overall": {
+        "mileage": 18883,
+        "tax": 125,
+        "mpg": 61.4,
+        "engineSize": 1.5,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 13862,
+        "count": 32
+      },
+      "by_year": {
+        "2020": {
+          "mileage": 409,
+          "tax": 145,
+          "mpg": 44.1,
+          "engineSize": 1.5,
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "avgPrice": 20950,
+          "minPrice": 20950,
+          "maxPrice": 20950
+        },
+        "2019": {
+          "mileage": 2991,
+          "tax": 145,
+          "mpg": 61.4,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 18871,
+          "minPrice": 17000,
+          "maxPrice": 20000
+        },
+        "2018": {
+          "mileage": 30000,
+          "tax": 145,
+          "mpg": 64.2,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 14999,
+          "minPrice": 14999,
+          "maxPrice": 14999
+        },
+        "2017": {
+          "mileage": 16310,
+          "tax": 145,
+          "mpg": 61.4,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 12844,
+          "minPrice": 8975,
+          "maxPrice": 15998
+        },
+        "2016": {
+          "mileage": 28926,
+          "tax": 30,
+          "mpg": 61.4,
+          "engineSize": 1.5,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 12046,
+          "minPrice": 8998,
+          "maxPrice": 14995
+        },
+        "2015": {
+          "mileage": 38106,
+          "tax": 125,
+          "mpg": 57.7,
+          "engineSize": 1.6,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 10272,
+          "minPrice": 9295,
+          "maxPrice": 11495
+        }
+      },
+      "available_years": [
+        2020,
+        2019,
+        2018,
+        2017,
+        2016,
+        2015
+      ]
+    },
+    "Tourneo Custom": {
+      "overall": {
+        "mileage": 20874,
+        "tax": 145,
+        "mpg": 42.2,
+        "engineSize": 2.0,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 21166,
+        "count": 69
+      },
+      "by_year": {
+        "2019": {
+          "mileage": 6198,
+          "tax": 145,
+          "mpg": 32.5,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 24564,
+          "minPrice": 18990,
+          "maxPrice": 29999
+        },
+        "2018": {
+          "mileage": 17930,
+          "tax": 145,
+          "mpg": 32.5,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 21148,
+          "minPrice": 15499,
+          "maxPrice": 27995
+        },
+        "2017": {
+          "mileage": 36000,
+          "tax": 145,
+          "mpg": 44.8,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 19186,
+          "minPrice": 16500,
+          "maxPrice": 22000
+        },
+        "2016": {
+          "mileage": 30816,
+          "tax": 200,
+          "mpg": 44.8,
+          "engineSize": 2.0,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 17522,
+          "minPrice": 12995,
+          "maxPrice": 22495
+        },
+        "2015": {
+          "mileage": 21670,
+          "tax": 235,
+          "mpg": 42.9,
+          "engineSize": 2.2,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 17248,
+          "minPrice": 15998,
+          "maxPrice": 18498
+        }
+      },
+      "available_years": [
+        2019,
+        2018,
+        2017,
+        2016,
+        2015
+      ]
+    },
+    "Transit Tourneo": {
+      "overall": {
+        "mileage": 19496,
+        "tax": 235,
+        "mpg": 42.2,
+        "engineSize": 2.2,
+        "transmission": "Manual",
+        "fuelType": "Diesel",
+        "avgPrice": 12450,
+        "count": 1
+      },
+      "by_year": {
+        "2014": {
+          "mileage": 19496,
+          "tax": 235,
+          "mpg": 42.2,
+          "engineSize": 2.2,
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "avgPrice": 12450,
+          "minPrice": 12450,
+          "maxPrice": 12450
+        }
+      },
+      "available_years": [
+        2014
+      ]
+    }
+  },
+  "dataset_summary": {
+    "total_records": 17811,
+    "min_price": 495,
+    "max_price": 54995,
+    "avg_price": 12270
+  }
+}

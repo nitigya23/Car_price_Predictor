@@ -1,0 +1,101 @@
+/* Chic & Modern Ford Prestige Valuation CSS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060911;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Form input focus styling */
+select, input[type="number"] {
+  outline: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+select:focus, input[type="number"]:focus {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.25) !important;
+}
+
+/* Custom range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #151f32;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #38bdf8;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  background: #0ea5e9;
+}
+
+/* Segmented Buttons */
+.trans-btn, .fuel-btn {
+  background: #0b1120;
+  border-color: rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+}
+
+.trans-btn:hover, .fuel-btn:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.trans-btn.active, .fuel-btn.active {
+  background: rgba(14, 165, 233, 0.15);
+  border-color: #0ea5e9;
+  color: #38bdf8;
+  font-weight: 700;
+  box-shadow: 0 0 16px rgba(14, 165, 233, 0.25);
+}
+
+/* Shimmer pulse for calculating */
+.calculating {
+  animation: pulse-glow 1.2s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Number animation transition */
+#predicted-price {
+  font-variant-numeric: tabular-nums;
+  transition: color 0.3s ease;
+}

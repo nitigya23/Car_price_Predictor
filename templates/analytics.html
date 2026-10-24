@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ford AI | Market Resale Analytics & Depreciation Curves</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Syne"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="bg-[#060911] text-slate-100 min-h-screen font-sans selection:bg-cyan-500 selection:text-white antialiased flex flex-col justify-between">
+
+  <!-- Ambient Luxury Glows -->
+  <div class="fixed top-0 left-1/4 w-[600px] h-[450px] bg-gradient-to-br from-indigo-600/15 via-cyan-600/10 to-transparent rounded-full blur-[140px] pointer-events-none -z-10"></div>
+  <div class="fixed bottom-10 right-10 w-[500px] h-[400px] bg-gradient-to-tr from-sky-600/15 to-transparent rounded-full blur-[130px] pointer-events-none -z-10"></div>
+
+  <!-- Chic Floating Navbar with Inter-Page Hyperlinks -->
+  <header class="sticky top-0 z-50 px-4 sm:px-6 lg:px-8 py-3 backdrop-blur-xl bg-[#060911]/85 border-b border-white/[0.07]">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 p-[1px] shadow-lg shadow-cyan-500/20">
+          <div class="w-full h-full bg-[#080d1a] rounded-[11px] flex items-center justify-center">
+            <i data-lucide="car" class="w-5 h-5 text-cyan-400"></i>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <span class="font-display font-bold text-lg tracking-tight text-white">FORD<span class="text-cyan-400">.AI</span></span>
+            <span class="text-[9px] font-mono uppercase px-2 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-500/25 text-cyan-300 font-semibold tracking-wider">ANALYTICS</span>
+          </div>
+          <p class="text-[11px] text-slate-400 tracking-wide">Market Trends</p>
+        </div>
+      </a>
+
+      <!-- Navigation Hyperlinks -->
+      <nav class="hidden md:flex items-center space-x-1 bg-white/[0.03] border border-white/[0.08] p-1 rounded-full backdrop-blur-md">
+        <a href="/" class="px-4 py-1.5 rounded-full text-xs font-medium tracking-wide text-slate-300 hover:text-white hover:bg-white/[0.06] flex items-center space-x-1.5 transition-all">
+          <i data-lucide="calculator" class="w-3.5 h-3.5 text-slate-400"></i>
+          <span>Valuation Studio</span>
+        </a>
+        <a href="/catalog" class="px-4 py-1.5 rounded-full text-xs font-medium tracking-wide text-slate-300 hover:text-white hover:bg-white/[0.06] flex items-center space-x-1.5 transition-all">
+          <i data-lucide="layout-grid" class="w-3.5 h-3.5 text-slate-400"></i>
+          <span>Model Showroom</span>
+        </a>
+        <a href="/analytics" class="px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-gradient-to-r from-white/10 to-white/5 border border-white/10 text-white shadow-sm flex items-center space-x-1.5 transition-all">
+          <i data-lucide="trending-up" class="w-3.5 h-3.5 text-cyan-400"></i>
+          <span>Market Analytics</span>
+        </a>
+        <a href="/about" class="px-4 py-1.5 rounded-full text-xs font-medium tracking-wide text-slate-300 hover:text-white hover:bg-white/[0.06] flex items-center space-x-1.5 transition-all">
+          <i data-lucide="cpu" class="w-3.5 h-3.5 text-slate-400"></i>
+          <span>Architecture</span>
+        </a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="flex items-center space-x-3">
+        <a href="/" class="inline-flex items-center space-x-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white shadow-lg shadow-cyan-500/20 active:scale-95 transition-all">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+          <span>Calculate Price</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Row -->
+    <div class="flex md:hidden items-center justify-around mt-3 pt-2 border-t border-white/[0.06] text-xs font-medium">
+      <a href="/" class="text-slate-400 hover:text-white py-1 flex items-center space-x-1"><i data-lucide="calculator" class="w-3.5 h-3.5"></i><span>Valuation</span></a>
+      <a href="/catalog" class="text-slate-400 hover:text-white py-1 flex items-center space-x-1"><i data-lucide="layout-grid" class="w-3.5 h-3.5"></i><span>Showroom</span></a>
+      <a href="/analytics" class="text-cyan-400 font-semibold py-1 flex items-center space-x-1"><i data-lucide="trending-up" class="w-3.5 h-3.5"></i><span>Analytics</span></a>
+      <a href="/about" class="text-slate-400 hover:text-white py-1 flex items-center space-x-1"><i data-lucide="cpu" class="w-3.5 h-3.5"></i><span>Architecture</span></a>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+
+    <!-- Header Section -->
+    <div class="mb-10 border-b border-white/[0.08] pb-8 flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div>
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-mono font-medium mb-3">
+          <i data-lucide="line-chart" class="w-3.5 h-3.5"></i>
+          <span>Empirical Analysis of 17,800+ Sales</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-display font-extrabold text-white">
+          Market Dynamics & <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-300 bg-clip-text text-transparent">Depreciation</span>
+        </h1>
+        <p class="text-slate-400 text-sm mt-2 max-w-2xl">
+          Visualizing depreciation velocity, transmission premiums, and fuel type demand based on verified UK automotive market data.
+        </p>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <a href="/" class="px-4 py-2 rounded-xl text-xs font-semibold bg-cyan-500/15 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/25 flex items-center space-x-1.5 transition-all">
+          <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+          <span>Value a Specific Vehicle →</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 4 Key Metric Stat Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+      
+      <div class="bg-[#0e1628]/90 border border-white/[0.08] rounded-2xl p-5 backdrop-blur-xl">
+        <span class="text-slate-400 text-xs font-mono uppercase block">Average Resale Value</span>
+        <div class="text-2xl font-display font-extrabold text-white mt-1">£12,280</div>
+        <div class="text-[11px] text-emerald-400 font-mono mt-2 flex items-center space-x-1">
+          <i data-lucide="check" class="w-3 h-3"></i>
+          <span>Across all models & years</span>
+        </div>
+      </div>
+
+      <div class="bg-[#0e1628]/90 border border-white/[0.08] rounded-2xl p-5 backdrop-blur-xl">
+        <span class="text-slate-400 text-xs font-mono uppercase block">Automatic Premium</span>
+        <div class="text-2xl font-display font-extrabold text-cyan-400 mt-1">+£4,094</div>
+        <div class="text-[11px] text-slate-400 font-mono mt-2">
+          34% higher than manual equivalent
+        </div>
+      </div>
+
+      <div class="bg-[#0e1628]/90 border border-white/[0.08] rounded-2xl p-5 backdrop-blur-xl">
+        <span class="text-slate-400 text-xs font-mono uppercase block">Annual Depreciation</span>
+        <div class="text-2xl font-display font-extrabold text-white mt-1">~12.4%</div>
+        <div class="text-[11px] text-slate-400 font-mono mt-2">
+          Stabilizes after year 4
+        </div>
+      </div>
+
+      <div class="bg-[#0e1628]/90 border border-white/[0.08] rounded-2xl p-5 backdrop-blur-xl">
+        <span class="text-slate-400 text-xs font-mono uppercase block">Top Resale Segment</span>
+        <div class="text-2xl font-display font-extrabold text-purple-400 mt-1">Hybrid (£22.1k)</div>
+        <div class="text-[11px] text-purple-300 font-mono mt-2">
+          Puma & Mondeo mHEV lead
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Charts Grid (2 x 2) -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+
+      <!-- Chart 1: Resale Price by Year (Depreciation Curve) -->
+      <div class="bg-[#0e1628]/90 border border-white/[0.08] rounded-3xl p-6 sm:p-7 shadow-xl backdrop-blur-xl">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-base font-display font-bold text-white">Depreciation Curve (2013 – 2020)</h3>
+            <p class="text-xs text-slate-400">Average selling price by vehicle registration year</p>
+          </div>
+          <span class="text-[10px] font-mono px-2.5 py-1 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">£ GBP</span>
+        </div>
+        <div class="h-64">
+          <canvas id="depreciationChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Chart 2: Transmission Premium Comparison -->
+      <div class="bg-[#0e1628]/90 border border-white/[0.08] rounded-3xl p-6 sm:p-7 shadow-xl backdrop-blur-xl">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-base font-display font-bold text-white">Transmission Value Differential</h3>
+            <p class="text-xs text-slate-400">Manual vs Semi-Auto vs Automatic market averages</p>
+          </div>
+          <span class="text-[10px] font-mono px-2.5 py-1 rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/20">+34% Auto</span>
+        </div>
+        <div class="h-64">
+          <canvas id="transmissionChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Chart 3: Average Resale Price by Top Models -->
+      <div class="bg-[#0e1628]/90 border border-white/[0.08] rounded-3xl p-6 sm:p-7 shadow-xl backdrop-blur-xl">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-base font-display font-bold text-white">Model Resale Baseline Comparison</h3>
+            <p class="text-xs text-slate-400">Average valuation across flagship and volume models</p>
+          </div>
+          <a href="/catalog" class="text-xs text-cyan-400 hover:underline">View Showroom ↗</a>
+        </div>
+        <div class="h-64">
+          <canvas id="modelsChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Chart 4: Fuel Type Market Averages -->
+      <div class="bg-[#0e1628]/90 border border-white/[0.08] rounded-3xl p-6 sm:p-7 shadow-xl backdrop-blur-xl">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h3 class="text-base font-display font-bold text-white">Fuel Drivetrain Economics</h3>
+            <p class="text-xs text-slate-400">Resale pricing by powertrain type</p>
+          </div>
+          <span class="text-[10px] font-mono px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Powertrain</span>
+        </div>
+        <div class="h-64">
+          <canvas id="fuelChart"></canvas>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Call to action card -->
+    <div class="p-8 rounded-3xl bg-gradient-to-r from-[#0d1424] via-[#101b33] to-[#0d1424] border border-white/[0.08] flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h4 class="text-xl font-display font-bold text-white">Ready to value your car against these benchmarks?</h4>
+        <p class="text-slate-400 text-xs mt-1">Input your vehicle's model, year, and exact mileage to get an AI-certified price.</p>
+      </div>
+      <div class="flex items-center space-x-3">
+        <a href="/" class="px-5 py-2.5 rounded-xl text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 text-white shadow-lg transition-all flex items-center space-x-1.5">
+          <i data-lucide="calculator" class="w-3.5 h-3.5"></i>
+          <span>Open Valuation Studio</span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Chic Luxury Footer -->
+  <footer class="border-t border-white/[0.08] bg-[#05070d] py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center space-x-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center">
+          <i data-lucide="car" class="w-4 h-4 text-white"></i>
+        </div>
+        <span class="font-display font-bold text-white text-sm">FORD VALUATION AI</span>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-400">
+        <a href="/" class="hover:text-white transition-colors">Valuation Studio</a>
+        <a href="/catalog" class="hover:text-white transition-colors">Model Showroom</a>
+        <a href="/analytics" class="text-cyan-400 font-semibold">Market Analytics</a>
+        <a href="/about" class="hover:text-white transition-colors">Architecture & Metrics</a>
+      </div>
+
+      <div class="text-xs font-mono text-slate-400">
+        Trained on 17,800+ UK Records
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    if (window.lucide) lucide.createIcons();
+
+    // Chart.js Default styling
+    Chart.defaults.color = '#94a3b8';
+    Chart.defaults.font.family = '"Plus Jakarta Sans", sans-serif';
+
+    // 1. Depreciation Line Chart
+    new Chart(document.getElementById('depreciationChart'), {
+      type: 'line',
+      data: {
+        labels: ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020'],
+        datasets: [{
+          label: 'Average Price (£)',
+          data: [6704, 7542, 8778, 10666, 11966, 13158, 17176, 20820],
+          borderColor: '#38bdf8',
+          backgroundColor: 'rgba(56, 189, 248, 0.12)',
+          fill: true,
+          tension: 0.35,
+          borderWidth: 3,
+          pointBackgroundColor: '#0284c7',
+          pointBorderColor: '#ffffff',
+          pointRadius: 5
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid: { color: 'rgba(255, 255, 255, 0.05)' } },
+          y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { callback: v => '£' + v.toLocaleString() } }
+        }
+      }
+    });
+
+    // 2. Transmission Chart
+    new Chart(document.getElementById('transmissionChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Manual', 'Semi-Auto', 'Automatic'],
+        datasets: [{
+          data: [12024, 14932, 16118],
+          backgroundColor: ['#64748b', '#3b82f6', '#0ea5e9'],
+          borderRadius: 8
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid: { display: false } },
+          y: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { callback: v => '£' + v.toLocaleString() } }
+        }
+      }
+    });
+
+    // 3. Models Chart
+    new Chart(document.getElementById('modelsChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Mustang', 'Puma', 'Kuga', 'Focus', 'Mondeo', 'EcoSport', 'Fiesta'],
+        datasets: [{
+          data: [34500, 19850, 15879, 13492, 13066, 12499, 10346],
+          backgroundColor: ['#f59e0b', '#a855f7', '#10b981', '#3b82f6', '#64748b', '#06b6d4', '#0ea5e9'],
+          borderRadius: 8
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid: { color: 'rgba(255, 255, 255, 0.05)' }, ticks: { callback: v => '£' + v.toLocaleString() } },
+          y: { grid: { display: false } }
+        }
+      }
+    });
+
+    // 4. Fuel Type Chart
+    new Chart(document.getElementById('fuelChart'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Hybrid (£22.1k)', 'Electric (£15.7k)', 'Diesel (£13.9k)', 'Petrol (£11.8k)'],
+        datasets: [{
+          data: [22149, 15738, 13918, 11829],
+          backgroundColor: ['#10b981', '#38bdf8', '#6366f1', '#f97316'],
+          borderWidth: 2,
+          borderColor: '#060911'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'right', labels: { boxWidth: 12, font: { size: 11 } } }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+
