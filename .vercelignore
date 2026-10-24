@@ -1,0 +1,10 @@
+# Ignore Python backend files so Vercel deploys purely as an Edge Static Site
+# This completely eliminates the AWS Lambda 250MB size limit error
+app.py
+streamlit_app.py
+train_model.py
+requirements.txt
+*.joblib
+*.ipynb
+*.bat
+__pycache__/
